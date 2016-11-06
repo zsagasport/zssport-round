@@ -1,12 +1,16 @@
-import {NgModule} from '@angular/core';
+import {NgModule,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {ZssportRoundModule} from '../src';
+import {RoundModule} from '../src/round.module';
+
+import {RoundService} from '../src/round.service';
+
 import {Demo} from './demo.component';
 
 @NgModule({
   declarations: [Demo],
-  imports: [BrowserModule, ZssportRoundModule],
+  imports: [BrowserModule,RoundModule],
   bootstrap: [Demo],
-  providers: []
+  providers: [RoundService]
 })
+  
 export class DemoModule {}

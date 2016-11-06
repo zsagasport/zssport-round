@@ -32,12 +32,12 @@ Then use it in your app like so:
 
 ```typescript
 import {Component} from '@angular/core';
-import {HelloWorld} from 'zssport-round';
+import {RoundComponent} from 'zssport-round';
 
 @Component({
   selector: 'demo-app',
-  directives: [HelloWorld],
-  template: '<hello-world></hello-world>'
+  directives: [RoundComponent],
+  template: '<zssport-round></zssport-round>'
 })
 export class DemoApp {}
 ```
